@@ -71,7 +71,7 @@ class PreprocessingMixin:
             torch.Tensor: 编码后的embedding
         """
         if model is None:
-            model = SentenceTransformer('/Users/jonnyw/Documents/tools/hfd/sentence-t5-xxl')
+            model = SentenceTransformer('sentence-transformers/sentence-t5-xxl')
         
         # 创建缓存目录
         os.makedirs(cache_dir, exist_ok=True)
