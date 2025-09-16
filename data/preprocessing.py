@@ -104,7 +104,7 @@ class PreprocessingMixin:
         # 生成新的embedding
         print("生成新的embedding...")
         embeddings = model.encode(
-            batch_size=2, 
+            batch_size=1, 
             sentences=text_list, 
             show_progress_bar=True, 
             convert_to_tensor=True
